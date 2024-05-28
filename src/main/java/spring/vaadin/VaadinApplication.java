@@ -9,7 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @Theme("customTheme")
 @PWA(name = "Project Vaadin and Spring",
-		shortName = "Vaadin-Spring")
+		shortName = "Vaadin-Spring",
+		iconPath = "icons/icon.png",
+		offlinePath = "offline-stub.html",
+		offlineResources = {"icons/offline.png"})
 public class VaadinApplication implements AppShellConfigurator {
 
 	public static void main(String[] args) {
