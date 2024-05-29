@@ -1,6 +1,5 @@
 package spring.vaadin.views;
 
-import com.vaadin.flow.component.Html;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.confirmdialog.ConfirmDialog;
@@ -9,7 +8,7 @@ import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.*;
 import spring.vaadin.components.MyRouter;
-import spring.vaadin.utils.LinkUtils;
+import spring.vaadin.utils.Utils;
 
 @Route(value = "beforeEnterAfterNav", layout = MyRouter.class)
 public class BeforeEnterAfterNavView extends VerticalLayout implements BeforeEnterObserver, AfterNavigationObserver {
@@ -25,7 +24,7 @@ public class BeforeEnterAfterNavView extends VerticalLayout implements BeforeEnt
         ConfirmDialog dialog = new ConfirmDialog();
         dialog.setHeader("Are you sure");
         dialog.setConfirmButton(new Button("Yes", e -> {
-            add(span, LinkUtils.getLink(BeforeLeaveView.class, "go to beforeLeave", null));
+            add(span, Utils.getLink(BeforeLeaveView.class, "go to beforeLeave", null));
         }));
         dialog.setCancelButton(new Button("No",
 //                e -> UI.getCurrent().getPage()
@@ -39,6 +38,6 @@ public class BeforeEnterAfterNavView extends VerticalLayout implements BeforeEnt
 
     @Override
     public void afterNavigation(AfterNavigationEvent event) {
-        add(new Anchor(LinkUtils.getURL(BeforeLeaveView.class), "after navigation go to beforeLeave"));
+        add(new Anchor(Utils.getURL(BeforeLeaveView.class), "after navigation go to beforeLeave"));
     }
 }

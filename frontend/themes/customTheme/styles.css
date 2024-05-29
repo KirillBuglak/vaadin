@@ -2,6 +2,10 @@ vaadin-grid-sorter[aria-label="Sort by CDAT"] {
     background-color: red;
 }
 
+vaadin-button {
+    #background-color: red;
+}
+
 .styled-button {
     background-color: green;
 }

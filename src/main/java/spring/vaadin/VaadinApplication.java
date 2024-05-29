@@ -1,7 +1,9 @@
 package spring.vaadin;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;
+import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.server.PWA;
+import com.vaadin.flow.shared.communication.PushMode;
 import com.vaadin.flow.theme.Theme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +14,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 		shortName = "Vaadin-Spring",
 		iconPath = "icons/icon.png",
 		offlinePath = "offline-stub.html",
-		offlineResources = {"icons/offline.png"})
+		offlineResources = {"icons/offline.png"},
+		description = "description",
+		backgroundColor = "blue",
+		themeColor = "#d4fd21",
+		startPath = "start")
+@Push(PushMode.MANUAL)
 public class VaadinApplication implements AppShellConfigurator {
 
 	public static void main(String[] args) {

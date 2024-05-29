@@ -8,7 +8,7 @@ import com.vaadin.flow.server.RouteRegistry;
 
 import java.util.List;
 
-public class LinkUtils {
+public class Utils {
     private static RouteRegistry registry = UI.getCurrent().getInternals().getRouter().getRegistry();
     public static Html getLink(Class<? extends Component> componentClass, String linkMessage, String id) {
         String url = registry.getTargetUrl(componentClass).orElseThrow();

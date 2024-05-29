@@ -14,11 +14,13 @@ import com.vaadin.flow.component.splitlayout.SplitLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.dom.Style;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.router.RouteAlias;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 @Route("appLayout")
+@RouteAlias("appLayout1")
 public class AppLayoutView extends AppLayout {
     public AppLayoutView() {
         setPrimarySection(Section.DRAWER);
