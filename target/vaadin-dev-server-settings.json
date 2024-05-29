@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "/home/k.buglak/IdeaProjects/vaadin/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "/home/k.buglak/IdeaProjects/vaadin/./frontend/generated/jar-resources",
+  "staticOutput": "/home/k.buglak/IdeaProjects/vaadin/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "/home/k.buglak/IdeaProjects/vaadin/target/classes/META-INF/VAADIN/config",
+  "frontendBundleOutput": "/home/k.buglak/IdeaProjects/vaadin/target/classes/META-INF/VAADIN/webapp",
+  "devBundleOutput": "/home/k.buglak/IdeaProjects/vaadin/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "/home/k.buglak/IdeaProjects/vaadin/target/dev-bundle/config",
+  "jarResourcesFolder": "/home/k.buglak/IdeaProjects/vaadin/./frontend/generated/jar-resources",
+  "themeName": "customTheme",
+  "clientServiceWorkerSource": "/home/k.buglak/IdeaProjects/vaadin/target/sw.ts",
+  "pwaEnabled": true,
+  "offlineEnabled": true,
+  "offlinePath": "'offline-stub.html'"
+}
