@@ -1,11 +1,11 @@
 package spring.vaadin.views;
 
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.html.IFrame;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 import spring.vaadin.components.MyComposite;
-import spring.vaadin.components.MyMUIButton;
 import spring.vaadin.components.MyTextField;
 import spring.vaadin.components.PaperSlider;
 import spring.vaadin.events.MyBackgroundColorEvent;
@@ -47,6 +47,8 @@ public class CustomComponentsView extends VerticalLayout {
 //        MyMUIButton myMUIButton = new MyMUIButton();
         paperSlider.addClickListener(e -> System.err.println(e.toString()));
 
-        add(myComposite, button, textField, detachBut, paperSlider);
+        IFrame iFrame = new IFrame("https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik");
+
+        add(myComposite, button, textField, detachBut, paperSlider, iFrame);
     }
 }
