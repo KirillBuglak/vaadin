@@ -11,8 +11,6 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.*;
 import com.vaadin.flow.server.RouteRegistry;
-import com.vaadin.flow.server.SessionDestroyEvent;
-import com.vaadin.flow.server.SessionDestroyListener;
 import spring.vaadin.components.MyRouter;
 import spring.vaadin.utils.Utils;
 

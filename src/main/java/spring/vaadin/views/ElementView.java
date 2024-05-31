@@ -1,9 +1,6 @@
 package spring.vaadin.views;
 
 import com.vaadin.flow.component.ClientCallable;
-import com.vaadin.flow.component.EventData;
-import com.vaadin.flow.component.Html;
-import com.vaadin.flow.component.Synchronize;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.NumberField;

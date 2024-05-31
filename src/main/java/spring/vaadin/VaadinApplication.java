@@ -19,7 +19,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 		backgroundColor = "blue",
 		themeColor = "#d4fd21",
 		startPath = "start")
-@Push(PushMode.MANUAL)
+@Push(PushMode.MANUAL) // TODO: 5/31/24 Really works - if MANUAL - haz to push to each ui yourself
 public class VaadinApplication implements AppShellConfigurator {
 
 	public static void main(String[] args) {

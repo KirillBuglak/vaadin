@@ -16,6 +16,8 @@ public class ScopesView extends VerticalLayout implements SessionDestroyListener
 
     @Autowired
     public ScopesView(SessionService sessionService, UIService uiService) {
+//        UI.getCurrent().setPollInterval(30_000);
+
         Span span = new Span("Open two tabs and compare the contents");
         Span ui = new Span("UI service - " + uiService.getId());
         ui.getStyle().setBackgroundColor("#fee2fd");

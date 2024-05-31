@@ -1,7 +1,6 @@
 package spring.vaadin.views;
 
 import com.vaadin.flow.component.Html;
-import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.grid.GridMultiSelectionModel;
 import com.vaadin.flow.component.grid.GridVariant;

@@ -5,7 +5,6 @@ import com.vaadin.flow.component.DebounceSettings;
 import com.vaadin.flow.component.DomEvent;
 import com.vaadin.flow.component.EventData;
 import com.vaadin.flow.component.notification.Notification;
-import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.dom.DebouncePhase;
 import spring.vaadin.components.PaperSlider;
 

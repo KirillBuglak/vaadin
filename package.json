@@ -75,10 +75,6 @@
   "devDependencies": {
     "@rollup/plugin-replace": "5.0.5",
     "@rollup/pluginutils": "5.1.0",
-    "@vaadin/application-theme-plugin": "./build/plugins/application-theme-plugin",
-    "@vaadin/stats-plugin": "./build/plugins/stats-plugin",
-    "@vaadin/theme-live-reload-plugin": "./build/plugins/theme-live-reload-plugin",
-    "@vaadin/theme-loader": "./build/plugins/theme-loader",
     "@vitejs/plugin-react": "4.2.1",
     "@vitejs/plugin-react-swc": "3.5.0",
     "async": "3.2.4",
@@ -184,7 +180,7 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "00de63d6c91f5f24c60e74665124a4e0e6107bdab2ac8e4dc2415ede226957ca"
+    "hash": "0fd1d0f78a24c8292a7155581a8b5491de2f5c00a458f2d4fc313679f2009a8d"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",

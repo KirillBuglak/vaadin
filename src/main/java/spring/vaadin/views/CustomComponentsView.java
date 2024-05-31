@@ -1,6 +1,7 @@
 package spring.vaadin.views;
 
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.html.IFrame;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -42,13 +43,21 @@ public class CustomComponentsView extends VerticalLayout {
                 detachBut.setText(firstText);
             }
         });
-
         PaperSlider paperSlider = new PaperSlider();
 //        MyMUIButton myMUIButton = new MyMUIButton();
         paperSlider.addClickListener(e -> System.err.println(e.toString()));
 
         IFrame iFrame = new IFrame("https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik");
 
-        add(myComposite, button, textField, detachBut, paperSlider, iFrame);
+        Dialog modal = new Dialog("Modal");
+        modal.setCloseOnOutsideClick(true);
+//        modal.setModal(false); //todo modal by default
+
+        Button addModal = new Button("add Modal component", e -> {
+            modal.open();
+//            UI.getCurrent().addModal(modal); //todo can add some other components modal
+        });
+
+        add(myComposite, button, textField, detachBut, paperSlider, iFrame, addModal);
     }
 }
