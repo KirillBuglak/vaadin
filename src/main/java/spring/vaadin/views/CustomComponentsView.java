@@ -2,8 +2,11 @@ package spring.vaadin.views;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dialog.Dialog;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.IFrame;
+import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.notification.Notification;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 import spring.vaadin.components.MyComposite;
@@ -58,6 +61,9 @@ public class CustomComponentsView extends VerticalLayout {
 //            UI.getCurrent().addModal(modal); //todo can add some other components modal
         });
 
-        add(myComposite, button, textField, detachBut, paperSlider, iFrame, addModal);
+        Div shadowComp = new Div();
+        shadowComp.getElement().attachShadow().appendChild(new Span("Try to look in html - This is in SHADOW").getElement()); // TODO: 5/31/24 Putting elements to shadow of the element
+
+        add(myComposite, button, textField, detachBut, paperSlider, iFrame, addModal, shadowComp);
     }
 }

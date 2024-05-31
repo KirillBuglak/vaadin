@@ -60,8 +60,8 @@ public class ElementView extends VerticalLayout {
     }
 
     private void handleClick(DomEvent domEvent) {
-        number.callJsFunction("increment"); //fixme doesn't work
-        number.executeJs("this.value = 3"); //todo this works great
+        number.callJsFunction("expand", number); // TODO: 5/31/24 Calls js on front //fixme doesn't work
+        number.executeJs("this.value = 3"); //todo calls js on back
 
         JsonObject eventData = domEvent.getEventData();
         boolean bool = eventData.getBoolean("event.shiftKey"); //todo hold shift while clicking te button
